@@ -2,35 +2,37 @@
     padding: 20px 10px;
     background: #303030;
     color: #fff;
+
+    @media (max-width: $md4) {
+        padding: 20px 10px;
+    }
+
+
     // .footer__container
 
     &__container {
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
 
-    // .footer__column
+        @media (max-width: $md4) {
+            flex-direction: column;
+            text-align: center;
+        }
+    }
 
     &__column {
-    }
-
-    // .footer__logo
-
-    &__logo {
+        @media (max-width: $md4) {
+            &:not(:first-child) {
+                margin: 10px 0 0 0;
+            }
+        }
     }
 }
 
 .column {
-
-    // .column__title
-
-    &__title {
-    }
-
-    // .column__item
-
     &__item {
-        margin: 10px 0 0;
+        margin: 10px 0 0 0;
     }
+
 }
