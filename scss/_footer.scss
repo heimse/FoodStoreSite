@@ -1,0 +1,36 @@
+.footer {
+    padding: 20px 10px;
+    background: #303030;
+    color: #fff;
+    // .footer__container
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    // .footer__column
+
+    &__column {
+    }
+
+    // .footer__logo
+
+    &__logo {
+    }
+}
+
+.column {
+
+    // .column__title
+
+    &__title {
+    }
+
+    // .column__item
+
+    &__item {
+        margin: 10px 0 0;
+    }
+}

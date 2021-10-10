@@ -5,7 +5,7 @@
         display: block;
 
         position: absolute;
-        top: 20px;
+        top: 30px;
         right: 20px;
 
         width: 30px;
@@ -36,7 +36,7 @@
 
         &._active {
             span {
-                transition: all 0.3s ease 0s;
+                background-color: #fff;
                 &:first-child {
                     transform: rotate(-45deg);
                     top: calc(50% - 1px);

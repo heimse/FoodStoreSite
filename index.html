@@ -5,28 +5,88 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>StarterPack</title>
+    <title>Food Store</title>
 </head>
 <body>
 <div class="wrapper">
     <header class="header">
-        <div class="header__menu menu">
+        <div class="header__container _container">
+            <div class="header__menu menu">
+                <div class="header__menu-left">
+                    <div class="header__menu-logo"><img src="img/icons/logo.svg" alt="Logo"></div>
+                    <nav class="menu__body">
+                        <li><a href="#" class="menu__link"></a></li>
+                        <li><a href="#" class="menu__link">Цены</a></li>
+                        <li><a href="#" class="menu__link">Доставка питания</a></li>
+                        <li><a href="#" class="menu__link">О нас</a></li>
+                    </nav>
+                </div>
+                <div class="header__modal-btn _modal-btn">Заказать</div>
+            </div>
             <div class="menu__burger burger-menu">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
-            <nav class="menu__body">
-                <li><a href="" class="menu__link">Basic menu</a></li>
-            </nav>
         </div>
     </header>
-
+    <div class="burger__body _hidden">
+        <li><a href="#" class="menu__link_burger"></a></li>
+        <li><a href="#" class="menu__link_burger">Цены</a></li>
+        <li><a href="#" class="menu__link_burger">Доставка питания</a></li>
+        <li><a href="#" class="menu__link_burger">О нас</a></li>
+    </div>
     <main class="main">
-        <h1>Hello World!</h1>
+        <div class="main__container _container">
+            <div class="tabs">
+                <div class="tabs__container">
+                    <div class="tabs__content__container">
+                        <div class="tabs__content">
+                            <img src="img/tabs/vegy.jpg" alt="" class='tabs__image'>
+                            <div class="tabs__desr">
+                                Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для
+                                людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с
+                                оптимальной ценой и высоким качеством!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tabs__header">
+                        <div class="tabs__header__title">Выберите стиль питания</div>
+                        <div class="tabs__picker-container">
+                            <div class="tabs__picker _active">Фитнес</div>
+                            <div class="tabs__picker">Премиум</div>
+                            <div class="tabs__picker">Постное</div>
+                            <div class="tabs__picker">Сбалансированное</div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__live">Живи полной жизнью!</div>
+                </div>
+            </div>
+            
+            <div class="divider"></div>
+        </div>
     </main>
     
-    <footer class="footer">That's basic footer</footer>
+    <footer class="footer">
+        <div class="footer__container _container">
+            <div class="footer__column">
+                <div class="column__title">Мы в социальных стях</div>
+                <div class="column__item">Instagram</div>
+                <div class="column__item">Instagram</div>
+            </div>
+
+            <div class="footer__column">
+                <div class="footer__logo"><img src="img/icons/veg.svg" alt=""></div>
+            </div>
+
+            <div class="footer__column">
+                <div class="column__title">Или позвоните нам</div>
+                <div class="column__item">+7 (900) 003-13-35</div>
+                <div class="column__item">+7 (900) 003-13-35</div>
+            </div>
+        </div>
+    </footer>
 
     <div class="popup">
         <div class="popup__body">That's basic popup-block</div>
