@@ -32,21 +32,8 @@
     // .header__modal-btn
 
     &__modal-btn {
-        flex-grow: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 15px 35px;
-        color: #000;
-        font-weight: 800;
         font-size: 18px;
-        border: 1px solid #000;
-        cursor: pointer;
-        transition: all 0.3s ease-in-out 0s;
-        box-shadow: 0px 5px 38px -4px rgba(34, 60, 80, 0.35);
-        &:hover {
-            box-shadow: 0px 5px 37px 11px rgba(34, 60, 80, 0.4);
-        }
+        padding: 15px 20px;
         @media (max-width: $md3) {
             display: none;
         }

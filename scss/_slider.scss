@@ -1,0 +1,144 @@
+.offer {
+    position: relative;
+    padding: 50px 0;
+
+    // .offer__background
+
+    &__background {
+        position: absolute;
+        top: 20px;
+        left: -50%;
+        height: 100%;
+        width: 80vw;
+        z-index: -10;
+        background-color: rgba(243,255,222,.45);
+    }
+
+    // .offer__container
+
+    &__container {
+    }
+
+    // .offer__text-block
+
+    &__text-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+
+    }
+
+    // .offer__text-side
+
+    &__text-side {
+        max-width: 580px;
+    }
+
+    // .offer__title
+
+    &__title {
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    // .offer__text
+
+    &__text {
+        margin: 10px 0 0 0;
+    }
+
+    // .offer__button-side
+
+    &__button-side {
+    }
+
+    // .offer__slider-block
+
+    &__slider-block {
+        margin: 40px 0 0 0;
+    }
+
+    // .offer__slider-block
+
+    &__slider-block {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    // .offer__slider-text-block-item
+
+    &__slider-text-block-item {
+        max-width: 350px;
+
+        &:not(:first-child) {
+            margin: 20px 0 0 0;
+        }
+    }
+
+    // .offer__slider-title
+
+    &__slider-title {
+        font-weight: 800;
+        font-size: 18px;
+    }
+
+    // .offer__slider-subtitle
+
+    &__slider-subtitle {
+        margin: 20px 0 0 0;
+    }
+
+    // .offer__slider
+
+    &__slider {
+        max-width: 550px;
+
+        &-item {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // .offer__slider-navigation
+
+    &__slider-navigation {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+
+        margin: 50px 0 0 0;
+    }
+
+    // .offer__slider-prev-slide
+
+    &__slider-prev-slide {
+        display: flex;
+        align-items: center;
+    }
+
+    // .offer__slider-counter
+
+    &__slider-counter {
+        font-size: 18px;
+        margin: 0 5px;
+        & .current-slide {
+            font-weight: 800;
+            font-size: 30px;
+        }
+
+    }
+
+    // .offer__slider-next-slide
+
+    &__slider-next-slide {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 3px;
+    }
+
+
+}

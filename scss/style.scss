@@ -31,6 +31,23 @@ body{
     flex: 1 1 auto;
 }
 
+._btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px;
+    max-width: 190px;
+    color: #000;
+    font-weight: 800;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0s;
+    box-shadow: -1px 4px 19px 10px rgba(34, 60, 80, 0.2);
+    &:hover {
+        box-shadow: 0px 5px 37px 11px rgba(34, 60, 80, 0.4);
+    }
+}
+
 //mixins
 @import '_mixins';
 
@@ -51,3 +68,6 @@ body{
 
 //sidepanel
 @import '_sidepanel';
+
+//slider
+@import '_slider';
