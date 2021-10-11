@@ -685,11 +685,14 @@ body._lock {
 
 .offer__title {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 24px;
+  letter-spacing: 1.5px;
 }
 
 .offer__text {
   margin: 10px 0 0 0;
+  font-size: 18px;
+  letter-spacing: normal;
 }
 
 .offer__slider-block {
@@ -715,15 +718,23 @@ body._lock {
 
 .offer__slider-title {
   font-weight: 800;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .offer__slider-subtitle {
-  margin: 20px 0 0 0;
+  margin: 15px 0 0 0;
+  font-size: 18px;
 }
 
 .offer__slider {
-  max-width: 550px;
+  max-width: 650px;
+  -webkit-box-shadow: 0px 5px 13px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 5px 13px 8px rgba(0, 0, 0, 0.26);
+}
+
+.offer__slider-item {
+  -webkit-box-shadow: 0px 5px 13px 8px rgba(0, 0, 0, 0.26);
+          box-shadow: 0px 5px 13px 8px rgba(0, 0, 0, 0.26);
 }
 
 .offer__slider-item img {
@@ -753,7 +764,7 @@ body._lock {
 }
 
 .offer__slider-counter {
-  font-size: 18px;
+  font-size: 20px;
   margin: 0 5px;
 }
 

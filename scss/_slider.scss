@@ -14,10 +14,6 @@
         background-color: rgba(243,255,222,.45);
     }
 
-    // .offer__container
-
-    &__container {
-    }
 
     // .offer__text-block
 
@@ -39,18 +35,16 @@
 
     &__title {
         font-weight: 800;
-        font-size: 18px;
+        font-size: 24px;
+        letter-spacing: 1.5px;
     }
 
     // .offer__text
 
     &__text {
         margin: 10px 0 0 0;
-    }
-
-    // .offer__button-side
-
-    &__button-side {
+        font-size: 18px;
+        letter-spacing: normal;
     }
 
     // .offer__slider-block
@@ -81,21 +75,24 @@
 
     &__slider-title {
         font-weight: 800;
-        font-size: 18px;
+        font-size: 22px;
     }
 
     // .offer__slider-subtitle
 
     &__slider-subtitle {
-        margin: 20px 0 0 0;
+        margin: 15px 0 0 0;
+        font-size: 18px;
     }
 
     // .offer__slider
 
     &__slider {
-        max-width: 550px;
+        max-width: 650px;
+        box-shadow: 0px 5px 13px 8px rgba(34, 60, 80, 0.19);
 
         &-item {
+            
             img {
                 width: 100%;
             }
@@ -122,7 +119,7 @@
     // .offer__slider-counter
 
     &__slider-counter {
-        font-size: 18px;
+        font-size: 20px;
         margin: 0 5px;
         & .current-slide {
             font-weight: 800;
