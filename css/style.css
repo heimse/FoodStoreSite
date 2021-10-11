@@ -641,3 +641,9 @@ body._lock {
 .sidepanel__icons > *:not(:first-child) {
   margin: 10px 0 0 0;
 }
+
+@media (max-width: 914px) {
+  .sidepanel {
+    display: none;
+  }
+}
