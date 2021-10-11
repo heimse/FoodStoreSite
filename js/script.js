@@ -39,7 +39,7 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     
     function initilizeBackgrounds() {
-        console.log(window.innerWidth);
+        
         if(window.innerWidth > 914) {
             const tabsBackground = document.querySelector('.tabs__background'),
                   offerBackground = document.querySelector('.offer__background');
