@@ -2,19 +2,6 @@
     position: relative;
     padding: 50px 0;
 
-    // .offer__background
-
-    &__background {
-        position: absolute;
-        top: 20px;
-        left: -50%;
-        height: 100%;
-        width: 80vw;
-        z-index: -10;
-        background-color: rgba(243,255,222,.45);
-    }
-
-
     // .offer__text-block
 
     &__text-block {

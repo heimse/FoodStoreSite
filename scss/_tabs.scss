@@ -5,6 +5,12 @@
 
 .tabs {
     padding: 0 0 130px 0;
+    
+    position: relative;
+
+    &__background {
+        background-color: #fafff0;
+    }
 
     // .tabs__container
 
@@ -63,6 +69,7 @@
         position: absolute;
         bottom: -25%;
         right: -20%;
+        z-index: 1;
 
         @media (max-width: $md1) {
             padding: 15px;
@@ -113,6 +120,9 @@
         padding: 30px;
 
         flex: 2 1 auto;
+
+        position: relative;
+        background-color: #fff;
 
         &__title {
             font-weight: 800;

@@ -34,6 +34,7 @@
     &__modal-btn {
         font-size: 18px;
         padding: 15px 20px;
+        background-color: #fff;
         @media (max-width: $md3) {
             display: none;
         }

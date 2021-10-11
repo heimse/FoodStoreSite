@@ -252,6 +252,7 @@ body._lock {
 .header__modal-btn {
   font-size: 18px;
   padding: 15px 20px;
+  background-color: #fff;
 }
 
 @media (max-width: 767.98px) {
@@ -356,6 +357,11 @@ body._lock {
 
 .tabs {
   padding: 0 0 130px 0;
+  position: relative;
+}
+
+.tabs__background {
+  background-color: #fafff0;
 }
 
 .tabs__container {
@@ -416,6 +422,7 @@ body._lock {
   position: absolute;
   bottom: -25%;
   right: -20%;
+  z-index: 1;
 }
 
 @media (max-width: 1200px) {
@@ -476,6 +483,8 @@ body._lock {
   -webkit-box-flex: 2;
       -ms-flex: 2 1 auto;
           flex: 2 1 auto;
+  position: relative;
+  background-color: #fff;
 }
 
 .tabs__header__title {
@@ -654,16 +663,6 @@ body._lock {
 .offer {
   position: relative;
   padding: 50px 0;
-}
-
-.offer__background {
-  position: absolute;
-  top: 20px;
-  left: -50%;
-  height: 100%;
-  width: 80vw;
-  z-index: -10;
-  background-color: rgba(243, 255, 222, 0.45);
 }
 
 .offer__text-block {
