@@ -37,7 +37,7 @@
         position: absolute;
         font-size: 20px;
         font-weight: 800;
-        bottom: -30px;
+        bottom: -60px;
 
         @media (max-width: 914px) {
             display: none;
@@ -48,13 +48,28 @@
 
     &__content {
         position: relative;
+
+        & img {
+            width:100%  !important;
+            height:auto !important;
+        }
     }
 
-    // .tabs__image
-
-    &__image {
-        width: 100%;
+    &__content__container {
+        flex:0 1 auto;
     }
+
+
+
+    // .tabs__image-wrapper
+
+    &__image-wrapper {
+        max-width: 611px;
+        max-height: 388px;
+        overflow: hidden;
+    }
+
+
 
     // .tabs__desr
 
@@ -117,9 +132,11 @@
     // .tabs__header
 
     &__header {
-        padding: 30px;
+        padding: 20px;
 
-        flex: 2 1 auto;
+        transition:0.3s all ease 0s;
+
+        flex: 0 0 auto;
 
         position: relative;
         background-color: #fff;
@@ -137,6 +154,7 @@
         @media (max-width: 914px) {
             text-align: center;
         }
+
     }
 
     // .tabs__picker-container
@@ -165,10 +183,10 @@
 
         &._active {
             opacity: 1;
-            font-size: 18px;
+            font-size: 17px;
 
             @media (max-width: 914px) {
-                font-size: 30px;
+                font-size: 27px;
             }
         }
 

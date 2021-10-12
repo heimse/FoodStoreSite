@@ -48,6 +48,10 @@ body{
     }
 }
 
+._hidden {
+    display: none;
+}
+
 //mixins
 @import '_mixins';
 
