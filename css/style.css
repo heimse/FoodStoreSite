@@ -133,6 +133,29 @@ body._lock {
   display: none;
 }
 
+._fade-in {
+  -webkit-animation: fade-in 0.8s;
+          animation: fade-in 0.8s;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .burger-menu {
   display: block;
 }
