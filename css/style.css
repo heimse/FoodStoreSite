@@ -134,8 +134,10 @@ body._lock {
 }
 
 ._fade-in {
-  -webkit-animation: fade-in 0.8s;
-          animation: fade-in 0.8s;
+  -webkit-animation-name: fade-in;
+          animation-name: fade-in;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
 }
 
 @-webkit-keyframes fade-in {

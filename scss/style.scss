@@ -53,7 +53,8 @@ body{
 }
 
 ._fade-in {
-    animation: fade-in 0.8s;
+    animation-name: fade-in;
+    animation-duration: 0.3s;
 }
 
 @keyframes fade-in {

@@ -22,10 +22,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     //tabs
-    const tabsContainerWidth = document.querySelector('.tabs__content__container').offsetWidth,
-        tabsContainerWHeight = document.querySelector('.tabs__content__container').offsetHeight;
-
-
     const tabsPickers = document.querySelectorAll('.tabs__picker'),
         tabsContent = document.querySelectorAll('.tabs__content');
 
@@ -33,6 +29,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     hideTabs(tabsContent);
     showTab(tabsContent, tabsPickers);
+
+    //Todo: fix description bug
 
     for (let i = 0; i < tabsContent.length; i++) {
         tabsPickers[i].addEventListener('click', () => {
@@ -46,7 +44,7 @@ window.addEventListener('DOMContentLoaded', () => {
     function showTab(tabs, tabsPicker) {
         tabs[tabCounter].classList.remove('_hidden');
         tabs.forEach(item => item.classList.remove('_fade-in'));
-        
+
         tabs[tabCounter].classList.add('_fade-in');
 
         tabsPicker.forEach(item => {
