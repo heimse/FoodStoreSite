@@ -45,6 +45,8 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function showTab(tabs, tabsPicker) {
         tabs[tabCounter].classList.remove('_hidden');
+        tabs.forEach(item => item.classList.remove('_fade-in'));
+        
         tabs[tabCounter].classList.add('_fade-in');
 
         tabsPicker.forEach(item => {
@@ -56,7 +58,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
     function hideTabs(tabs) {
         tabs.forEach(item => {
-            item.classList.remove('_shown');
             item.classList.add('_hidden');
         });
     }

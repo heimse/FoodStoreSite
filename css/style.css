@@ -560,11 +560,11 @@ body._lock {
 }
 
 .tabs__picker {
-  opacity: 0.7;
+  opacity: 0.6;
   font-size: 16px;
   cursor: pointer;
-  -webkit-transition: all 0.2s ease 0s;
-  transition: all 0.2s ease 0s;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .tabs__picker:not(:first-child) {

@@ -172,10 +172,10 @@
     // .tabs__picker
 
     &__picker {
-        opacity: 0.7;
+        opacity: 0.6;
         font-size: 16px;
         cursor: pointer;
-        transition: all 0.2s ease 0s;
+        transition: all 0.3s ease 0s;
         
         &:not(:first-child) {
             margin: 10px 0 0 0;
