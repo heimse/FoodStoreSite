@@ -30,14 +30,14 @@
         @media (max-width: $md4) {
             width: 100%;
         }
-        position: relative;
+        
     }
 
     &__live {
         position: absolute;
         font-size: 20px;
         font-weight: 800;
-        bottom: -60px;
+        bottom: 60px;
 
         @media (max-width: 914px) {
             display: none;
@@ -84,7 +84,7 @@
         position: absolute !important; 
         bottom: -25%;
         right: -20%;
-        z-index: 1 !important;
+        z-index: 2 !important;
 
         @media (max-width: $md1) {
             padding: 15px;
@@ -107,7 +107,13 @@
             font-size: 16px;
         }
 
-        @media (max-width: 580px) {
+        @media (max-width: 914px) {
+            bottom: -10%;
+            font-size: 14px;
+        }
+
+        @media (max-width: 520px) {
+            bottom: -40%;
             font-size: 14px;
         }
 
@@ -136,9 +142,7 @@
 
         transition:0.3s all ease 0s;
 
-        flex: 0 0 auto;
-
-        position: relative;
+        flex: 1 0 auto;
         background-color: #fff;
 
         &__title {

@@ -91,9 +91,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     function initilizeBackgrounds() {
-        if (window.innerWidth > 914) {
+        const wrapper = document.querySelector('.wrapper');
+        if (wrapper.clientWidth > 914) {
             const tabsBackground = document.querySelector('.tabs__background'),
-                offerBackground = document.querySelector('.offer__background');
+                  offerBackground = document.querySelector('.offer__background');
 
             const header = document.querySelector('.header'),
                 tabs = document.querySelector('.tabs'),
@@ -101,7 +102,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
             const tabsBackgroundHeight = header.offsetHeight + tabs.offsetHeight + 20,
                 tabsBackgroundWidth = window.innerWidth / 2,
-                tabsBackgroundRight = window.innerWidth / 2 - 15;
+                tabsBackgroundRight = window.innerWidth / 2;
 
             const offerBackgroundTop = tabsBackgroundHeight + 25,
                 offerBackgroundWidth = window.innerWidth / 2,
