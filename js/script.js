@@ -112,4 +112,22 @@ window.addEventListener('DOMContentLoaded', () => {
             setBackground(offerBackground, offerBackgroundTop, 0, offerBackgroundHeight, offerBackgroundWidth, '#fafff0');
         }
     }
+
+
+    //slick slider
+    $('.offer__slider').slick({
+        autoplay: true,
+        autoplaySpeed: 10000,
+        prevArrow: $('.offer__slider-prev-slide'),
+        nextArrow: $('.offer__slider-next-slide'),
+        dots: true,
+        appendDots: $('.offer__slider'),
+    });
+
+    const slides = document.querySelectorAll('.offer__slider-item'),
+          totalSlidesSpan = document.querySelectorAll('.total-slides');
+
+    
+    totalSlidesSpan.innerHTML = slides.length;
+
 });

@@ -9,8 +9,10 @@
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="favicon/site.webmanifest">
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -69,19 +71,19 @@
                                 оптимальной ценой и высоким качеством!
                             </div>
                         </div>
-                        <div class="tabs__content">
+                        <div class="tabs__content _hidden">
                             <div class="tabs__image-wrapper"><img src="img/tabs/elite.jpg" alt="" class='tabs__image'></div>
                             <div class="tabs__descr">
                                 Меню “Премиум” - мы используем не только красивый дизайн упаковки, но и качественное исполнение блюд. Красная рыба, морепродукты, фрукты - ресторанное меню без похода в ресторан!
                             </div>
                         </div>
-                        <div class="tabs__content">
+                        <div class="tabs__content _hidden">
                             <div class="tabs__image-wrapper"><img src="img/tabs/post.jpg" alt="" class='tabs__image'></div>
                             <div class="tabs__descr">
                                 Наше специальное “Постное меню” - это тщательный подбор ингредиентов: полное отсутствие продуктов животного происхождения. Полная гармония с собой и природой в каждом элементе! Все будет Ом!
                             </div>
                         </div>
-                        <div class="tabs__content">
+                        <div class="tabs__content _hidden">
                             <div class="tabs__image-wrapper"><img src="img/tabs/hamburger.jpg" alt="" class='tabs__image'></div>
                             <div class="tabs__descr">
                                 Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
@@ -144,6 +146,9 @@
 
                         <div class="offer__slider">
                             <div class="offer__slider-item"><img src="img/slider/pepper.jpg" alt="Pepper"></div>
+                            <div class="offer__slider-item"><img src="img/slider/olive-oil.jpg" alt="Olive Oil"></div>
+                            <div class="offer__slider-item"><img src="img/slider/paprika.jpg" alt="Paprika"></div>
+                            <div class="offer__slider-item"><img src="img/slider/food-12.jpg" alt="Food"></div>
                         </div>
                     </div>
                 </div>
@@ -174,7 +179,46 @@
     <div class="popup">
         <div class="popup__body">That's basic popup-block</div>
     </div>
+
     <script src="js/script.js"></script>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+    //slick slider
+     $(document).ready(function() {
+        $('.offer__slider').slick({
+            autoplay: true,
+            autoplaySpeed: 10000,
+            prevArrow: $('.offer__slider-prev-slide'),
+            nextArrow: $('.offer__slider-next-slide'),
+            dots: true,
+            appendDots: $('.offer__slider'),
+            adaptiveHeight: true
+        });
+
+        const slides = document.querySelectorAll('.offer__slider-item'),
+              totalSlidesSpan = document.querySelectorAll('.total-slides'),
+              currentSlidesSpan = document.querySelectorAll('.current-slide');
+
+        
+        totalSlidesSpan.innerHTML = slides.length;
+
+        $('.offer__slider').on('afterChange', function(slick, currentSlideObj){
+            let currentSlide = $('.offer__slider').slick('slickCurrentSlide');
+            currentSlide++;
+
+            if (currentSlide <= 10) {
+
+                $( currentSlidesSpan ).html('0' + currentSlide);
+            } else {
+                $( currentSlidesSpan ).html(currentSlide);
+            }
+        });
+      });
+    </script>
 </div>
 </body>
 </html>

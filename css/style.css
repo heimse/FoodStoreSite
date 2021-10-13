@@ -831,6 +831,8 @@ body._lock {
 .offer__slider {
   margin: 0 0 0 10px;
   max-width: 600px;
+  max-height: 340px;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
