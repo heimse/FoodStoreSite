@@ -106,8 +106,7 @@
 
     &__slider {
         margin: 0 0 0 10px;
-        max-width: 600px;
-        max-height: 340px;
+    
         overflow: hidden;
         display: flex;
         flex: 1 1 auto;
@@ -123,9 +122,14 @@
             }
         }
 
+        max-width: 600px;
 
         @media (max-width: $md2) {
             max-width: 450px;
+        }
+
+        @media (max-width: $md4) {
+            max-width: 300px;
         }
     }
 
@@ -158,6 +162,7 @@
         & .current-slide {
             font-weight: 800;
             font-size: 30px;
+            transition: all 0.3s ease 0s;
             @media (max-width: $md3) {
                 font-size: 50px;
             }
