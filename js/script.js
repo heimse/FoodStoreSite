@@ -23,29 +23,35 @@ window.addEventListener('DOMContentLoaded', () => {
 
     //tabs
     const tabsPickers = document.querySelectorAll('.tabs__picker'),
-        tabsContent = document.querySelectorAll('.tabs__content');
+          tabsContent = document.querySelectorAll('.tabs__content'),
+          tabsImages = document.querySelectorAll('.tabs__image-wrapper'),
+          tabsDescr = document.querySelectorAll('.tabs__descr');
 
     let tabCounter = 0;
 
-    hideTabs(tabsContent);
-    showTab(tabsContent, tabsPickers);
+    console.log(tabsImages);
 
-    //Todo: fix description bug
+    hideTabs(tabsContent);
+    showTab(tabsContent, tabsPickers, tabsDescr, tabsImages);
 
     for (let i = 0; i < tabsContent.length; i++) {
         tabsPickers[i].addEventListener('click', () => {
             tabCounter = i;
             hideTabs(tabsContent);
-            showTab(tabsContent, tabsPickers);
+            showTab(tabsContent, tabsPickers, tabsDescr, tabsImages);
         });
     }
 
 
-    function showTab(tabs, tabsPicker) {
+    function showTab(tabs, tabsPicker, descr, tabsImgs) {
         tabs[tabCounter].classList.remove('_hidden');
-        tabs.forEach(item => item.classList.remove('_fade-in'));
 
-        tabs[tabCounter].classList.add('_fade-in');
+
+        tabsImgs.forEach(item => item.classList.remove('_fade-in'));
+        descr.forEach(item => item.classList.remove('_fade-in'));
+
+        tabsImgs[tabCounter].classList.add('_fade-in');
+        descr[tabCounter].classList.add('_fade-in');
 
         tabsPicker.forEach(item => {
             item.classList.remove('_active');

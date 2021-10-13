@@ -453,7 +453,7 @@ body._lock {
   overflow: hidden;
 }
 
-.tabs__desr {
+.tabs__descr {
   display: block;
   padding: 25px;
   width: 60%;
@@ -461,14 +461,14 @@ body._lock {
   line-height: 30px;
   font-size: 20px;
   color: #000000b6;
-  position: absolute;
+  position: absolute !important;
   bottom: -25%;
   right: -20%;
-  z-index: 1;
+  z-index: 1 !important;
 }
 
 @media (max-width: 1200px) {
-  .tabs__desr {
+  .tabs__descr {
     padding: 15px;
     line-height: 20px;
     font-size: 16px;
@@ -476,14 +476,14 @@ body._lock {
 }
 
 @media (max-width: 991.98px) {
-  .tabs__desr {
+  .tabs__descr {
     padding: 10px;
     font-size: 13px;
   }
 }
 
 @media (max-width: 970px) {
-  .tabs__desr {
+  .tabs__descr {
     bottom: -35%;
     right: -15%;
     font-size: 14px;
@@ -491,28 +491,28 @@ body._lock {
 }
 
 @media (max-width: 674px) {
-  .tabs__desr {
+  .tabs__descr {
     font-size: 16px;
   }
 }
 
 @media (max-width: 580px) {
-  .tabs__desr {
+  .tabs__descr {
     font-size: 14px;
   }
 }
 
 @media (max-width: 520px) {
-  .tabs__desr {
+  .tabs__descr {
     bottom: -40%;
     font-size: 14px;
   }
 }
 
 @media (max-width: 479.98px) {
-  .tabs__desr {
+  .tabs__descr {
     width: 100%;
-    position: static;
+    position: static !important;
     margin: 5px 0 0 0;
     font-size: 18px;
     text-align: center;
